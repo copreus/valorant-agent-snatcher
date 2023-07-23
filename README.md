@@ -10,7 +10,7 @@ This instalock utility utilizes the VALORANT API and carries inherent risks, inc
 ## How to edit config.json
 Simply type the agent name for each map. You are free to leave it blank. If valorant ever releases a new map, simply make a new line and type the maps name to add it. This program will work perfectly fine with newly released agents without an update. (Thanks to [**this**](https://valorant-api.com/)). <br /> 
 Below is an example config. **DON'T FORGET TO CHANGE YOUR REGION AND SHARD**. <br /> 
-It is recommended to keep the check_delay to **1 second or above**.
+It is recommended to keep the check_delay at **1 second or more**.
 ```{
   "check_delay": 0.5,
   "region": "na",
