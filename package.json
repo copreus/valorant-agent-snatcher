@@ -1,0 +1,17 @@
+{
+  "name": "agent-snatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "https": "^1.0.0",
+    "node-fetch": "^2.6.12",
+    "path": "^0.12.7",
+    "pkg": "^3.0.6"
+  }
+}
