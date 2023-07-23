@@ -1,12 +1,16 @@
 ## About
 This program utilizes VALORANTS API to lock agents faster then humanly possible. This program is **much much** faster compared to macros.
 
+## WARNING
+
+This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
 ## Usage
  Run the program **AFTER** Valorant is open.
 
 ## How to edit config.json
 Simply type the agent name for each map. You are free to leave it blank. If valorant ever releases a new map, simply make a new line and type the maps name to add it. This program will work perfectly fine with newly released agents without an update. (Thanks to [**this**](https://valorant-api.com/)). <br /> 
-Below is an example config. **DON'T FORGET TO CHANGE YOUR REGION AND SHARD**.
+Below is an example config. **DON'T FORGET TO CHANGE YOUR REGION AND SHARD**. <br /> 
+It is recommended to keep the check_delay to **1 second or above**.
 ```{
   "check_delay": 0.5,
   "region": "na",
