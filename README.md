@@ -54,7 +54,7 @@ Refer to these tables for your region and shard.
 
 ### Bundled Release:
 
-1) Download the [release]().
+1) Download the [release](https://github.com/copreus/valorant-agent-snatcher/releases/download/release/valorant-agent-snatcher.zip).
 2) Extract **all** files.
 3) Edit **config.json**.
 4) Run **start.bat**.
@@ -62,7 +62,7 @@ Refer to these tables for your region and shard.
 ### Running from source:
 
 1) Download [NodeJS](https://nodejs.org/en)
-2) Download the [source]().
+2) Download the [source](https://github.com/copreus/valorant-agent-snatcher/archive/refs/heads/main.zip).
 3) Run **install_packages.bat**
 4) Run **start.bat**
 
