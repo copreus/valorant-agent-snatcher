@@ -145,7 +145,7 @@ async function lockagent(pre_ID, agent){
 async function current_game_match(mid){
 
   let ent = await entitlements();
-  let response = await fetch(`https://glz-na-1.na.a.pvp.net/pregame/v1/matches/${mid}`, {
+  let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/matches/${mid}`, {
     method: 'GET',
     headers: {
       //'X-Riot-ClientVersion': `07.01.00.917901`,
