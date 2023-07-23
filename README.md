@@ -69,8 +69,9 @@ If you're not that tech-savvy, use the bundled release instead of running from s
 
 1) Download [NodeJS](https://nodejs.org/en)
 2) Download the [source](https://github.com/copreus/valorant-agent-snatcher/archive/refs/heads/main.zip).
-3) Run **install_packages.bat**
-4) Run **start.bat**
+3) Extract **all** files.
+4) Run **install_packages.bat**
+5) Run **start.bat**
 
 
 ### Compiling from source:
