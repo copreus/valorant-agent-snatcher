@@ -4,16 +4,17 @@ const fs = require('fs');
 const path = require('path');
 const CryptoJS = require('crypto-js');
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
-const configFile = path.join(__dirname, 'config.json');
+const configFile = path.join(process.cwd(), 'config.json');
 const config = JSON.parse(fs.readFileSync(configFile, 'utf8'));
+
 const { check_delay, region, shard, ...maps } = config;
+
 
 for (const mapName in maps) {
   if (Object.prototype.hasOwnProperty.call(maps, mapName)) {
     global[mapName] = maps[mapName];
   }
 }
-
 
 const agent = new https.Agent({
   rejectUnauthorized: false
