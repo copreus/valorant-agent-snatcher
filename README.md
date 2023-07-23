@@ -7,8 +7,11 @@ This instalock utility utilizes the VALORANT API and carries inherent risks, inc
 ## Usage
  Run the program **AFTER** Valorant is open.
 
+ ## What if new maps or agents come out?
+ If a new map comes out, simply add a new line in the config file with the map name. If a new agent comes out, simply type the name of the agent. This program relies on valorant-api.com, so it does not need to update each time a new agent/map comes out.
+
 ## How to edit config.json
-Simply type the agent name for each map. You are free to leave it blank. If valorant ever releases a new map, simply make a new line and type the maps name to add it. This program will work perfectly fine with newly released agents without an update. (Thanks to [**this**](https://valorant-api.com/)). <br /> 
+Simply type the agent name for each map. You are free to leave it blank. <br /> 
 Below is an example config. **DON'T FORGET TO CHANGE YOUR REGION AND SHARD**. <br /> 
 It is recommended to keep the check_delay at **1 second or more**.
 ```{
