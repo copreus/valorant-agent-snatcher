@@ -94,7 +94,9 @@ It is advisable to review their official documentation and policies before utili
 ## Licence
 MIT License
 <br /> 
+<br /> 
 Copyright (c) 2023 Gusto
+<br /> 
 <br /> 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
