@@ -83,21 +83,26 @@ async function uuid(){
 
 
 async function matchid(){
-  let ent = await entitlements();
-  if (ent.token === undefined || ent.accessToken === undefined){
-    console.log("Failed to fetch entitlements. Do you have Valorant running?")
+  try{
+    let ent = await entitlements();
+    if (ent.token === undefined || ent.accessToken === undefined){
+      console.log("Failed to fetch entitlements. Do you have Valorant running?")
+    }
+    let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/players/${userid}`, {
+      method: 'GET',
+      headers: {
+        //'X-Riot-ClientVersion': `07.01.00.917901`,
+        'X-Riot-Entitlements-JWT': `${ent.token}`,
+        'Authorization': `Bearer ${ent.accessToken}`
+      },
+      agent: agent
+    });
+    response = await response.json(); 
+    return(response);
+  }catch{
+    //console.log("Error, network may be unstable.")
+    return 0;
   }
-  let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/players/${userid}`, {
-    method: 'GET',
-    headers: {
-      //'X-Riot-ClientVersion': `07.01.00.917901`,
-      'X-Riot-Entitlements-JWT': `${ent.token}`,
-      'Authorization': `Bearer ${ent.accessToken}`
-    },
-    agent: agent
-  });
-  response = await response.json(); 
-  return(response);
 }
 
 async function fetch_agents(nameagent){
@@ -173,29 +178,31 @@ async function start(){
     console.log('\x1b[36m%s\x1b[0m', 'Instalock started, fetched entitlements');
     while (true){
       let preMIDI = await matchid();
-      if (preMIDI['MatchID'] != undefined && matchlist.indexOf(preMIDI['MatchID'])===-1){
+      if (preMIDI !=0){
+        if (preMIDI['MatchID'] != undefined && matchlist.indexOf(preMIDI['MatchID'])===-1){
 
-        await fetch_maps();
-        let mapname = await current_game_match(preMIDI['MatchID'])
-        if (maps[maps_[mapname]].length === 0){
-          console.log('\x1b[31m%s\x1b[0m', "You did not have any agent selected for this map.")
-          matchlist.push(preMIDI['MatchID'])
-        } else{
-          console.log('\x1b[32m%s\x1b[0m', `Match ID found ${preMIDI['MatchID']}`)
-          //console.log(maps[maps_[mapname]])
-          let agentresponse = await lockagent(preMIDI['MatchID'], maps[maps_[mapname]]);
-          if (agentresponse === 0){
-            console.log('\x1b[32m%s\x1b[0m', `Locked ${maps[maps_[mapname]].toUpperCase()}`)
+          await fetch_maps();
+          let mapname = await current_game_match(preMIDI['MatchID'])
+          if (maps[maps_[mapname]].length === 0){
+            console.log('\x1b[31m%s\x1b[0m', "You did not have any agent selected for this map.")
             matchlist.push(preMIDI['MatchID'])
           } else{
-            console.log('\x1b[31m%s\x1b[0m', "Failed to lock agent.")
-            matchlist.push(preMIDI['MatchID'])
+            console.log('\x1b[32m%s\x1b[0m', `Match ID found ${preMIDI['MatchID']}`)
+            //console.log(maps[maps_[mapname]])
+            let agentresponse = await lockagent(preMIDI['MatchID'], maps[maps_[mapname]]);
+            if (agentresponse === 0){
+              console.log('\x1b[32m%s\x1b[0m', `Locked ${maps[maps_[mapname]].toUpperCase()}`)
+              matchlist.push(preMIDI['MatchID'])
+            } else{
+              console.log('\x1b[31m%s\x1b[0m', "Failed to lock agent.")
+              matchlist.push(preMIDI['MatchID'])
+            }
           }
-        }
-        if(preMIDI['MatchID'] === undefined){
-          //console.log("Waiting for new match...")
-        }
-        }
+          if(preMIDI['MatchID'] === undefined){
+            //console.log("Waiting for new match...")
+          }
+          }
+      }
       //console.log("hi")
       await delay(check_delay*1000)
     }
