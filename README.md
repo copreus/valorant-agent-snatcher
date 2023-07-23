@@ -1,5 +1,5 @@
 ## About
-This program utilizes VALORANTS API to lock agents faster then humanly possible. This program is **much much** faster compared to macros.
+This program utilizes VALORANTS API to instalock agents faster then humanly possible. This program is **much much** faster compared to macros.
 
 ## WARNING
 
