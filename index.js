@@ -170,7 +170,6 @@ async function start(){
     if (uuidstatus === 1){console.log("Failed to fetch PUUID. Is Valorant running?")}
   } else{
     console.log('\x1b[36m%s\x1b[0m', 'Instalock started, fetched entitlements');
-    console.log('\x1b[33m%s\x1b[0m', `Checking every ${check_delay} second/s`)
     while (true){
       let preMIDI = await matchid();
       if (preMIDI['MatchID'] != undefined && matchlist.indexOf(preMIDI['MatchID'])===-1){
