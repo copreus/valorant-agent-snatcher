@@ -4,7 +4,10 @@ This program utilizes VALORANTS API to instalock agents faster then humanly poss
  ### Please consider leaving a star on this repo!
 
 ## WARNING
-
+ <br /> Valorant has recently flagged a binary (exe file) of another known instalock tool resulting in some of those users receiving a 2 week ban. I'm pretty sure the binary (exe file) for valorant-agent-snatcher in releases isn't flagged yet. Run it from source if you want to avoid these complications.
+ <br />
+  **TLDR USE COMPILED VERSION IN RELEASES AT YOUR OWN RISK. 
+ <br />
 This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
 ## Usage
  Run the program **AFTER** Valorant is open.
