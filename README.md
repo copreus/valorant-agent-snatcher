@@ -11,7 +11,7 @@ This program utilizes VALORANTS API to instalock agents faster then humanly poss
  <br />
 This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
 ## Usage
- Run the program **AFTER** Valorant is open.
+Run the program **AFTER** Valorant is open.
 
  ## What if new maps or agents come out?
  If a new map comes out, simply add a new line in the config file with the map name. If a new agent comes out, simply type the name of the agent. (If it errors out, make sure the last line has no comma at the end). This program relies on valorant-api.com, so it does not need to update each time a new agent/map comes out. 
