@@ -6,7 +6,6 @@ This program utilizes VALORANTS API to instalock agents faster then humanly poss
 ## WARNING
  <br /> Valorant has recently flagged a binary (exe file) of another known instalock tool resulting in some of those users receiving a 2 week ban. I am not sure how long it will be before Valorant flags one of the compiled releases in this repo.
  <br />
- <br />
   ### **TLDR USE COMPILED VERSION IN RELEASES AT YOUR OWN RISK, RUN FROM SOURCE TO AVOID THIS COMPLICATION**
  <br />
  <br />
