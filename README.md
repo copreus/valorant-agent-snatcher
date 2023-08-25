@@ -10,7 +10,7 @@ This instalock utility utilizes the VALORANT API and carries inherent risks, inc
  <br /> 07/27/2023  <br />
 Valorant has recently flagged a binary (exe file) of another known instalock tool resulting in some of those users receiving a 2 week ban. I am not sure how long it will be before Valorant flags one of the compiled releases in this repo.
  <br />
-  <br /> Update 08/25/2023  <br />
+  <br /> **Update 08/25/2023**  <br />
   Using the source version for a month, havent been banned yet :D
    <br />
   ### **TLDR USE COMPILED VERSION IN RELEASES AT YOUR OWN RISK, RUN FROM SOURCE TO AVOID THIS COMPLICATION.**
