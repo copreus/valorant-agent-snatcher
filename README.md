@@ -2,6 +2,7 @@
 This program utilizes VALORANTS API to instalock agents faster then humanly possible. This program is **much much** faster compared to macros.
  <br /> 
  ### Please consider leaving a star on this repo!
+## New map Sunset supported!
 
 ## WARNING
 This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
