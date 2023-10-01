@@ -1,4 +1,5 @@
 ## About
+valorant instalocker, valorant instalock
 This program utilizes VALORANTS API to instalock agents faster then humanly possible. This program is **much much** faster compared to macros.
  <br /> 
  ### Please consider leaving a star on this repo!
