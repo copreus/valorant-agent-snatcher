@@ -69,6 +69,7 @@ async function uuid(){
       agent: agent
     });
     response = await response.json();
+    //console.log(response)
     if (response.puuid === undefined){
       return 1;
     } else{
@@ -88,16 +89,19 @@ async function matchid(){
     if (ent.token === undefined || ent.accessToken === undefined){
       console.log("Failed to fetch entitlements. Do you have Valorant running?")
     }
+    console.log(ent.token)
+    console.log(ent.accessToken)
     let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/players/${userid}`, {
       method: 'GET',
       headers: {
-        //'X-Riot-ClientVersion': `07.01.00.917901`,
+        'X-Riot-ClientPlatform':'ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9',
+        'X-Riot-ClientVersion': `09.00.00.2628993`,
         'X-Riot-Entitlements-JWT': `${ent.token}`,
         'Authorization': `Bearer ${ent.accessToken}`
-      },
-      agent: agent
+      }
     });
     response = await response.json(); 
+    //console.log(response)
     return(response);
   }catch{
     //console.log("Error, network may be unstable.")
@@ -134,8 +138,10 @@ async function lockagent(pre_ID, agent){
   let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/matches/${pre_ID}/lock/${await fetch_agents(agent)}`, {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${ent.accessToken}`,
-      'X-Riot-Entitlements-JWT': `${ent.token}`
+     'X-Riot-ClientPlatform':'ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9',
+      'X-Riot-ClientVersion': `09.00.00.2628993`,
+      'X-Riot-Entitlements-JWT': `${ent.token}`,
+      'Authorization': `Bearer ${ent.accessToken}`
     }
   });
   response = await response.json();
@@ -154,7 +160,8 @@ async function current_game_match(mid){
   let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/matches/${mid}`, {
     method: 'GET',
     headers: {
-      //'X-Riot-ClientVersion': `07.01.00.917901`,
+      'X-Riot-ClientPlatform':'ew0KCSJwbGF0Zm9ybVR5cGUiOiAiUEMiLA0KCSJwbGF0Zm9ybU9TIjogIldpbmRvd3MiLA0KCSJwbGF0Zm9ybU9TVmVyc2lvbiI6ICIxMC4wLjE5MDQyLjEuMjU2LjY0Yml0IiwNCgkicGxhdGZvcm1DaGlwc2V0IjogIlVua25vd24iDQp9',
+      'X-Riot-ClientVersion': `09.00.00.2628993`,
       'X-Riot-Entitlements-JWT': `${ent.token}`,
       'Authorization': `Bearer ${ent.accessToken}`
     },
@@ -168,6 +175,8 @@ async function current_game_match(mid){
 
 }
 let matchlist = [];
+
+//chris loves tits
 
 async function start(){
   console.log('\x1b[32m%s\x1b[0m',"Valorant Agent Snatcher by github.com/copreus")
