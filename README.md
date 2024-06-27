@@ -3,9 +3,9 @@ valorant instalocker, valorant instalock
 This program utilizes VALORANTS API to instalock agents faster then humanly possible. This program is **much much** faster compared to macros.
  <br /> 
  ### Please consider leaving a star on this repo!
-## New map Sunset supported!
-### Update 03/28/2024: New agent clove is supported.
-
+### Update 06/27/2024: Fixed the snatcher not locking agents.
+ <br /> 
+ Changed the headers for requests sent to Valorant to include 'X-Riot-ClientPlatform' and 'X-Riot-ClientVersion' because without them, the requests would be blocked.
 ## WARNING
 This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
 <br />
