@@ -6,6 +6,7 @@ This program utilizes VALORANTS API to instalock agents faster then humanly poss
 ### Update 06/27/2024: Fixed the snatcher not locking agents.
  <br /> 
  Changed the headers for requests sent to Valorant to include 'X-Riot-ClientPlatform' and 'X-Riot-ClientVersion' because without them, the requests would be blocked.
+  <br /> 
 ## WARNING
 This instalock utility utilizes the VALORANT API and carries inherent risks, including the possibility of receiving account-related consequences, such as bans, from Riot Games. While bans are unlikely, it is essential to recognize that they remain a potential risk. Users are advised to run this utility at their own discretion, assuming full responsibility for any potential outcomes related to its usage.
 <br />
