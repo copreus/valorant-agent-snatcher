@@ -89,8 +89,8 @@ async function matchid(){
     if (ent.token === undefined || ent.accessToken === undefined){
       console.log("Failed to fetch entitlements. Do you have Valorant running?")
     }
-    console.log(ent.token)
-    console.log(ent.accessToken)
+    //console.log(ent.token)
+    //console.log(ent.accessToken)
     let response = await fetch(`https://glz-${region}-1.${shard}.a.pvp.net/pregame/v1/players/${userid}`, {
       method: 'GET',
       headers: {
