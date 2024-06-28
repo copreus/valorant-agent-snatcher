@@ -71,14 +71,16 @@ Refer to these tables for your region and shard.
 | kr    | kr             |
 
 
-
 ### Bundled Release:
-If you're not that tech-savvy, use the bundled release instead of running from source. 
+~~If you're not that tech-savvy, use the bundled release instead of running from source.~~
 
-1) Download the [release](https://github.com/copreus/valorant-agent-snatcher/releases/download/v1.0-hotfix/valorant-agent-snatcher.zip).
-2) Extract **all** files.
-3) Edit **config.json**.
-4) Run **start.bat**.
+~~1) Download the [release](https://github.com/copreus/valorant-agent-snatcher/releases/download/v1.0-hotfix/valorant-agent-snatcher.zip).~~
+~~2) Extract **all** files.~~
+~~3) Edit **config.json**.~~
+~~4) Run **start.bat**.~~
+
+**Note:** Releases are not updated. Please run from source.
+
 
 ### Running from source:
 
