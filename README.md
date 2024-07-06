@@ -65,7 +65,7 @@ Refer to these tables for your region and shard.
 
 <a id="usage-instructions"></a>
 ## Usage
-Run the program **after** Valorant is open.
+Run the program **after** Valorant is open. If you switch accounts or restart valorant, restart the program.
 
 ## Handling New Maps or Agents
 If a new map is released, simply add a new line in the `config.json` file with the map name. If a new agent is added, type the agent's name.
