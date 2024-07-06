@@ -73,13 +73,13 @@ If a new map is released, simply add a new line in the `config.json` file with t
 **Note:** If you encounter any errors, use [https://jsonlint.com/](https://jsonlint.com/) to ensure your `config.json` is properly formatted. Improperly formatted JSON will cause the program to stop working.
 
 ## Running from Source
-1. Download [Node.js](https://nodejs.org/en)
+1. Download and install [Node.js](https://nodejs.org/en)
 2. Download the [source code](https://github.com/copreus/valorant-agent-snatcher/archive/refs/heads/main.zip)
 3. Extract all the files
 4. Run `install_packages.bat`
 5. Run `start.bat`
 
 ## Contact
-Discord tag: **gustogusto**
+Discord tag: **yg07.**
 
 Join the Discord server for support: [https://discord.gg/n26yuBpa25](https://discord.gg/n26yuBpa25)
