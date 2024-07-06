@@ -23,7 +23,7 @@ The headers for requests sent to Valorant have been updated to include `'X-Riot-
 ## Configuring `config.json`
 Simply type the agent name for each map. You're free to leave it blank.
 
-Here's an example `config.json`. **Remember to change your region and shard**. It's recommended to keep the `check_delay` at **1 second or more**.
+Here's an example `config.json`. **Remember to change your region and shard**. It's recommended to keep the `check_delay` at **3 seconds or more**.
 
 ```json
 {
