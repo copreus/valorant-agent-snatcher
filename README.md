@@ -9,6 +9,8 @@ The Valorant Agent Snatcher is a program that utilizes the Valorant API to insta
 The headers for requests sent to Valorant have been updated to include `'X-Riot-ClientPlatform'` and `'X-Riot-ClientVersion'`. Without these, the requests would be blocked.
 
 ## Update Logs
+**06/27/2024:** Compiled releases in the Releases sections have been removed due to a new update. Run from source instead.
+
 **07/27/2023:** Valorant has recently flagged a binary (executable file) of another known instalock tool, resulting in some users receiving a 2-week ban. It's uncertain how long it will be before Valorant flags one of the compiled releases in this repository.
 
 **08/25/2023:** Using the source version for a month, no bans yet. :D
