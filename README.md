@@ -5,25 +5,23 @@ The Valorant Agent Snatcher is a program that utilizes the Valorant API to insta
 
 **Please consider leaving a star on this repository!**
 
-
-## Update Logs
-**Update 06/27/2024:** Fixed the Snatcher not locking agents.
-
+### Update: Fixed the Snatcher Not Locking Agents (06/27/2024)
 The headers for requests sent to Valorant have been updated to include `'X-Riot-ClientPlatform'` and `'X-Riot-ClientVersion'`. Without these, the requests would be blocked.
 
-**Update 07/27/2023:** Valorant has recently flagged a binary (executable file) of another known instalock tool, resulting in some users receiving a 2-week ban. It's uncertain how long it will be before Valorant flags one of the compiled releases in this repository.
+## Update Logs
+**07/27/2023:** Valorant has recently flagged a binary (executable file) of another known instalock tool, resulting in some users receiving a 2-week ban. It's uncertain how long it will be before Valorant flags one of the compiled releases in this repository.
 
-**Update 08/25/2023:** Using the source version for a month, no bans yet. :D
+**08/25/2023:** Using the source version for a month, no bans yet. :D
 
-**TLDR: Use the compiled version in the Releases section at your own risk. Run from the source to avoid this complication.**
+**TLDR:** Use the compiled version in the Releases section at your own risk. Running from the source is recommended to avoid this complication.
 
 ## Usage
 <a href="#usage-instructions">Click here to scroll down to the usage instructions</a>
 
 ## Configuring `config.json`
-Simply type the agent name for each map. You are free to leave it blank.
+Simply type the agent name for each map. You're free to leave it blank.
 
-Here's an example `config.json`. **Don't forget to change your region and shard**. It's recommended to keep the `check_delay` at **1 second or more**.
+Here's an example `config.json`. **Remember to change your region and shard**. It's recommended to keep the `check_delay` at **1 second or more**.
 
 ```json
 {
@@ -67,10 +65,10 @@ Refer to these tables for your region and shard.
 ## Usage
 Run the program **after** Valorant is open.
 
-## What if new maps or agents come out?
-If a new map comes out, simply add a new line in the `config.json` file with the map name. If a new agent comes out, simply type the name of the agent. (If it errors out, make sure the last line has no comma at the end). This program relies on `valorant-api.com`, so it does not need to update each time a new agent/map is added.
+## Handling New Maps or Agents
+If a new map is released, simply add a new line in the `config.json` file with the map name. If a new agent is added, type the agent's name.
 
-**If you get errors, use [https://jsonlint.com/](https://jsonlint.com/) to make sure your `config.json` is properly formatted. (If it's not, the program will cease to work.)**
+**Note:** If you encounter any errors, use [https://jsonlint.com/](https://jsonlint.com/) to ensure your `config.json` is properly formatted. Improperly formatted JSON will cause the program to stop working.
 
 ## Running from Source
 1. Download [Node.js](https://nodejs.org/en)
