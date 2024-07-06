@@ -80,6 +80,6 @@ If a new map is released, simply add a new line in the `config.json` file with t
 5. Run `start.bat`
 
 ## Contact
-Discord tag: **yg07.**
+Discord tag: **yg07.** (with the dot at the end)
 
 Join the Discord server for support: [https://discord.gg/n26yuBpa25](https://discord.gg/n26yuBpa25)
