@@ -213,7 +213,7 @@ async function start(){
           }
       }
       //console.log("hi")
-      await delay(check_delay*1000)
+      await delay((check_delay*1000)+2000)
     }
   }
 }
