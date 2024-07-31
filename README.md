@@ -1,7 +1,7 @@
 # Valorant Agent Snatcher
 
 ## About
-The Valorant Agent Snatcher is a program that utilizes the Valorant API to instalock agents faster than humanly possible. This program is **much faster** compared to macros.
+Valorant Agent Snatcher is a program that utilizes the Valorant API to instalock agents faster than humanly possible. This program is **much faster** compared to macros.
 
 **Please consider leaving a star on this repository!**
 
